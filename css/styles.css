@@ -27,8 +27,10 @@
       }
       .bg-pattern-top {
           position: absolute;
-          bottom: 200px;
-          left: 20px;
+          left: 10px;
+          width: 300px;
+      }
+      .bg-pattern-top img{
       }
       .bg-pattern-bottom {
           position: fixed;
@@ -93,6 +95,7 @@
           font-size: 12px;
       }
   }
+  @media only screen and (min-width: 601px) {
     body {
         background-color: var(--dark-cyan);
       }
@@ -171,3 +174,4 @@
       .social-media-stats .gray-font {
           font-size: 12px;
       }
+  }
