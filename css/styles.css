@@ -1,0 +1,102 @@
+:root {
+    /*Primary*/
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-gravish-blue: hsl(227, 10%, 46%);
+    /*Neutral*/
+    --dark-gray: hsl(0, 0%, 59%);
+
+  }
+  body {
+      font-size: 18px;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 400;
+  }
+ .gray-font {
+     color: var(--dark-gray);
+ }
+  @media only screen and (min-width: 375px) {
+    body {
+      background-color: var(--dark-cyan);
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    body {
+        background-color: var(--dark-cyan);
+      }
+      .container{
+          overflow: hidden;
+      }
+      .background {
+          z-index: 1;
+      }
+      .bg-pattern-top {
+          position: absolute;
+          top: -60%;
+          left: -15%;
+      }
+      .bg-pattern-bottom {
+          position: fixed;
+          bottom: -65%;
+          right: -15%;
+      }
+      .profile-container {
+        background-color: white;
+        width: 350px;
+        height: 360px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 20px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .top-pattern {
+        object-fit: fill; /* Do not scale the image */
+        object-position: center; /* Center the image within the element */
+        border-radius: 20px;
+      }
+      .top-pattern img {
+          border-radius: 20px 20px 0 0;
+      }
+      .avatar {
+          z-index: 2;
+          position: relative;
+          top: -60px;
+          left: 120px;
+      }
+      .avatar img {
+          border: 6px solid white;
+          border-radius: 50%;
+      }
+      .profile-info {
+        position: inherit;
+        left: -34%;
+        top: 14px;
+        text-align: center;
+      }
+      .profile-info .profile-location {
+          margin-top: 10px;
+      }
+      .bottom-container{
+          position: absolute;
+          z-index: 3;
+          top: 276px;
+          width: 350px;
+          border-top: 0.04px solid lightgray;
+      }
+      .social-media-stats{
+          text-align: center;
+           margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 20px;
+          margin-right: 20px;
+          bottom: -4px;
+         
+      }
+      .social-media-stats .gray-font {
+          font-size: 12px;
+      }
+  }

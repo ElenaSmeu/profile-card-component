@@ -3,16 +3,54 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
+  <title>Profile component</title>
+  <meta name="description" content="The profile component">
+  <meta name="author" content="Elena Smeu">
+  <!--Fonts links-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
+    <div class="container">
+        <div class="background">
+        <div class="bg-pattern-top">
+            <img width="978" height="978" src="assets/bg-pattern-top.svg">
+        </div>
+        <div class="bg-pattern-bottom">
+            <img width="978" height="978" src="assets/bg-pattern-bottom.svg">
+        </div>
+        </div>
+        <div class="profile-container">
+            <div class="top-pattern">
+                <img src="assets/bg-pattern-card.svg">
+            </div>
+            <div class="avatar">
+                <img src="assets/image-victor.jpg">
+                 <div class="profile-info">
+                    <div><b>Victor Crest</b> <span class="gray-font">26</span></div>
+                    <div class="profile-location"><small class="gray-font">London</small></div>
+                </div>
+            </div>
+            <div class="bottom-container">
+                 <div class="social-media-stats">
+                <div>
+                    <div><b>80K</b></div>
+                    <small class="gray-font">Followers</small>
+                </div>
+                <div>
+                    <div><b>803K</b></div>
+                    <small class="gray-font">Likes</small>
+                </div>
+                <div>
+                    <div><b>1.4K</b></div>
+                    <small class="gray-font">Photos</small>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
