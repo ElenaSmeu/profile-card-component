@@ -7,4 +7,19 @@
     --dark-gray: hsl(0, 0%, 59%);
 
   }
-  
+  body {
+      font-size: 18px;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 400;
+  }
+
+  @media only screen and (min-width: 375px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    body {
+      background-color: blue;
+    }
+  }
